@@ -24,7 +24,7 @@ class Particle {
     constructor() {
         this.position = createVector(random(width), random(height))
         this.velocity = createVector(random(-2, 2), random(-2, 2))
-        this.size = 10
+        this.size = Math.floor(random(5, 8))
     }
 
     update() {
