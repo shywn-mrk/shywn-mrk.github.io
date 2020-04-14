@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Shayan Karimi</title>
         <link rel="stylesheet" href="./css/style.css">
+        <link rel="stylesheet" href="./css/loader.css">
         <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
         <script src="https://cdn.jsdelivr.net/npm/p5@1.0.0/lib/p5.js"></script>
     </head>
@@ -36,6 +37,16 @@
             </div>
         </div>
 
+        <div class="loader-wrapper">
+            <div class="lds-spinner"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+        </div>
+
         <script src="./js/script.js"></script>
+        <script src="./js/jquery-3.5.0.min.js"></script>
+        <script>
+            $(window).on('load', () => {
+                $('.loader-wrapper').fadeOut(2000)
+            })
+        </script>
     </body>
 </html>
