@@ -52,7 +52,7 @@ class Particle {
         particles.forEach(particle => {
             const distance = dist(this.position.x, this.position.y, particle.position.x, particle.position.y)
 
-            if(distance < 120) {
+            if(distance < 150) {
                 stroke('rgba(255, 255, 255, 0.1)')
                 line(this.position.x, this.position.y, particle.position.x, particle.position.y)
             }
