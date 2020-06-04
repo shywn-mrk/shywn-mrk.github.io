@@ -11,7 +11,7 @@ function setup() {
 }
 
 function draw() {
-    background(55, 100, 144)
+    background(40, 44, 53)
 
     particles.forEach((particle, index) => {
         particle.update()
@@ -34,7 +34,7 @@ class Particle {
 
     draw() {
         noStroke()
-        fill('rgba(255, 255, 255, 0.5)')
+        fill('rgba(190, 253, 255, 0.5)')
         circle(this.position.x, this.position.y, this.size)
     }
 
@@ -53,7 +53,7 @@ class Particle {
             const distance = dist(this.position.x, this.position.y, particle.position.x, particle.position.y)
 
             if(distance < 150) {
-                stroke('rgba(255, 255, 255, 0.1)')
+                stroke('rgba(190, 253, 255, 0.1)')
                 line(this.position.x, this.position.y, particle.position.x, particle.position.y)
             }
         })
